@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<script src="js/owtscript.js"></script>
+<script src="js/owtmenu.js"></script>
+<script src="js/owtform.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/owtenviarFormulario.js"></script>
+
+<head>
+    <link rel="shortcut icon" href="imagens/onWave-ico.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onWave Tech - Consultoria e Serviços em Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagens/onWave - Logomarca 04 - fundo transparente.png" alt="Logo da sua empresa"
+                class="logo-imagem">
+        </div>
+        <div class="empresa">
+            <h1>onWave Tech</h1>
+            <h3>Consultoria e Serviços em TI</h3>
+        </div>
+        <nav>
+            <button class="menu-btn">Menu</button>
+            <ul class="menu">
+                <li><a href="#">Inicial</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bem-vindos!</h2>
+
+        <section class="blocos">
+            <div class="bloco">
+                <img src="imagens/onWave_quem_somos.jpeg" alt="Descrição da imagem">
+                <h1>Quem somos?</h1>
+                <p>A onWave Tech é uma empresa de Consultoria, especializada em trazer as melhores soluções para você e
+                    sua empresa na área de TI, seja ela do tamanho ou capacidade atual (autônomo, micro, pequena ou
+                    média). Sempre buscamos a qualidade em todos
+                    os serviços que oferecemos, com garantia da experiência e conhecimento adquiridos por nós durante
+                    mais 30 anos de experiência que acumulamos.</p>
+            </div>
+            <div class="bloco">
+                <img src="imagens/onWave - Você.png" alt="Descrição da imagem">
+                <h1>O que oferecemos?</h1>
+                <p>Com a nossa experiência, oferecemos consultoria e soluções personalizadas em TI
+                    para o seu negócio.</p>
+                <ul>
+                    <li>
+                        <strong>Análise e consultoria:</strong> Identificamos as melhores soluções para sua empresa.
+                    </li>
+                    <li>
+                        <strong>Manutenção:</strong> Mantemos sua infraestrutura sempre em funcionamento, limpeza de
+                        seus equipamentos, trocas e upgrades de componentes.
+                    </li>
+                    <li>
+                        <strong>Segurança:</strong> Protegemos seus dados e sistemas.
+                    </li>
+                    <li>
+                        <strong>Otimização:</strong> Aumentamos a eficiência e reduzimos custos.
+                    </li>
+                </ul>
+            </div>
+            <div class="bloco-3">
+                <h1>Contate-nos</h1>
+                <form id=" formContato" class="form-container" onsubmit="return enviarFormulario()">
+                    <p><label for="nome">Nome:</label></p>
+                    <p><input type="text" id="nome" name="nome" required></p>
+                    <p><label for="empresa">Empresa:</label></p>
+                    <p><input type="text" id="empresa" name="empresa"></p>
+                    <p><label for="telefone">Telefone/Whatsapp:</label></p>
+                    <p><input type="tel" id="telefone" name="telefone" required></p>
+                    <p><label for="email">E-mail:</label></p>
+                    <p><input type="email" id="email" name="email" required></p>
+                    <p><label for="necessidade">Resumo da Necessidade:</label></p>
+                    <p><textarea id="necessidade" name="necessidade" required></textarea></p>
+                    <p><button type="submit">Enviar</button></p>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <strong>&copy; 2024 onWave Tech</strong>
+            <button href="https://wa.me/5512996818002" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+            <button href="mailto:onwavetech@outlook.com.br"><i class="fas fa-envelope"></i> E-mail</button><br>
+            <li>Localização: Rua Anacleto Deolindo Liberato - Jardim Colonial</li>
+            <li>São José dos Campos - SP</li>
+            <li>CEP 12334-300</li>
+        </p>
+    </footer>
+</body>
+
+</html>

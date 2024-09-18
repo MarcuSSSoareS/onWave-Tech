@@ -1,0 +1,328 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #1b99e2a9, #000000);
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Início - Padrões Iniciais */
+
+/* Aplicando arredondamento a todos os elementos do site */
+* {
+    border-radius: 15px;
+}
+
+.logo-imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.empresa {
+    text-align: center;
+    /* Centraliza o nome da empresa */
+    font-size: 30px;
+    /* Define o tamanho da fonte */
+    font-weight: bold;
+    /* Torna o texto em negrito */
+    color: #ffffff;
+    /* Define a cor do texto */
+}
+
+.logo,
+.empresa,
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+header h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 4px 7px rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Garante que o corpo tenha pelo menos a altura da viewport */
+}
+
+header,
+footer {
+    position: sticky;
+    top: 0;
+    /* Para o cabeçalho */
+    bottom: 0;
+    /* Para o rodapé */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* Garante que fiquem acima do conteúdo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /*    
+    background-image: url('imagens/onWave - Placa de Circuitos com ondas.jpg');
+    background-size: cover;
+    background-position: center;
+    */
+    height: 80px;
+    /* Ajuste a altura conforme necessário */
+
+}
+
+main {
+    color: white;
+    flex: 1;
+    /* Ocupa todo o espaço restante */
+    overflow-y: auto;
+    /* Permite rolagem vertical se necessário */
+}
+
+h1 {
+    color: #dfe9f3;
+    font-size: 24px;
+}
+
+h2 {
+    color: #dfe9f3;
+    font-size: 30px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Início - Estrutura de Blocos de informações do Corpo do Site */
+.blocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.bloco {
+    width: 10%;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background: linear-gradient(to bottom, #000000, #1b99e2a9) fixed;
+    /*background-image: url('imagens/onWave - Placa de Circuito com ondas.jpg');*/
+}
+
+.bloco {
+    width: 30%;
+    height: 50%;
+}
+
+.bloco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bloco-3 {
+    width: 10%;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-image: url('imagens/onWave_Form.jpeg');
+    /* Texto branco para melhor contraste com as imagens */
+}
+
+.bloco-3 {
+    width: 30%;
+    height: 50%;
+    /* 3 blocos por linha, com um pouco de espaço entre eles */
+}
+
+.bloco-3 img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+/* Fim - Estrutura de Blocos de informações do Corpo do Site */
+
+.confirmacao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+
+/* Início - Formulário Inicial do Site
+#formContato {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    border: 5px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#mensagemSucesso {
+    border: 1px solid #4CAF50;
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Fim - Formulário Inicial do Site */
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('imagens/onWave - Placa de Circuitos com ondas.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+}
+
+footer {
+    height: 70px;
+    font-size: 10px;
+    color: #dfe9f3;
+    background-image: url('imagens/onWave---Placa-de-Circuitos-com-ondas---Preta.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+}
+
+/* Início - Padrão dos Botões */
+button {
+    background-color: #9495d8;
+    /* Cor de fundo verde */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Fim - Padrão dos Botões */
+
+
+
+/* Início - Menu do Cabeçalho */
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu-options {
+    display: none;
+    /* Inicialmente oculto */
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    background-color: #3e8e41;
+}
+
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    /* Ajuste a largura conforme necessário */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.menu.active {
+    max-height: 400px;
+    /* Ajuste a altura máxima conforme necessário */
+}
+
+.menu li {
+    padding: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Fim - Menu do Cabeçalho */
